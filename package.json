@@ -1,0 +1,50 @@
+{
+  "name": "enchannel-notebook-backend",
+  "version": "0.0.1",
+  "description": "Enchannel backend for connecting to a Jupyter/notebook server",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Tests pass\" && exit 0",
+    "prepublish": "npm run build",
+    "prebuild": "rimraf web/ lib/",
+    "build": "npm run build:lib && npm run build:web",
+    "build:lib": "babel src/ --out-dir=lib/ --presets=es2015",
+    "build:web": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/nteract/enchannel-notebook-backend"
+  },
+  "keywords": [
+    "enchannel",
+    "notebook",
+    "jupyter",
+    "connect",
+    "socket",
+    "rxjs",
+    "iopub",
+    "run",
+    "execute",
+    "code"
+  ],
+  "author": "nteract contributors",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "^6.6.4",
+    "bower": "^1.7.0",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "json-loader": "^0.5.4",
+    "jupyter-js-widgets": "file:../jupyter-js-widgets",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14",
+    "babel-preset-es2015": "^6.6.0",
+    "rimraf": "^2.5.2"
+  },
+  "dependencies": {
+    "@reactivex/rxjs": "^5.0.0-beta.2",
+    "jupyter-js-services": "^0.5.5"
+  }
+}
