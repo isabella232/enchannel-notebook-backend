@@ -150,5 +150,5 @@ Before opening a pull request, please run the unit tests locally:
 npm test
 ```
 
-You can also verify that the code works by hand by opening the test.html file
-in your web browser.
+You can also verify that the code works by hand by opening the `test.html` file
+in your web browser and following the promps.
