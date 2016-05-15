@@ -2,7 +2,7 @@
 const baseUrl = prompt('baseUrl', 'http://localhost:8888');
 const domain = baseUrl.split('://').slice(1).join('://');
 const wsUrl = prompt('wsUrl', `ws://${domain}`);
-const uuid = require('node-uuid');
+const uuid = require('uuid');
 const enchannel = require('enchannel');
 
 // Create a connection options object
