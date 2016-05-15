@@ -1,4 +1,4 @@
-const rxjs = require('@reactivex/rxjs');
+const rxjs = require('rxjs/Rx');
 import { listRunningKernels, connectToKernel, startNewKernel, getKernelSpecs } from 'jupyter-js-services';
 
 /**
