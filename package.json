@@ -1,6 +1,6 @@
 {
   "name": "enchannel-notebook-backend",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Enchannel backend for connecting to a Jupyter/notebook server",
   "main": "lib/index.js",
   "scripts": {
