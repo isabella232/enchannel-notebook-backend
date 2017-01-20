@@ -1,4 +1,6 @@
 # [WIP] enchannel-notebook-backend
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/nteract/enchannel-notebook-backend.svg)](https://greenkeeper.io/)
 ![enchannel version](https://img.shields.io/badge/enchannel-1.1-ff69b4.svg)
 
 :notebook: An enchannel backend that lets you connect to a [Jupyter notebook server](https://github.com/jupyter/notebook).
